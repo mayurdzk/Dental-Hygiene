@@ -21,7 +21,7 @@ since I am not sure what features the app should have beyond the obvious one sta
 
 ## The Plan
 1. Get the app in a state where it can start logging time a user spends brushing their teeth.
-(The project may stop right here, as most hobby projects do.)
+(The project may stop right here, as most hobby projects plausibly do.)
 2. Implement a nice(r) UI.
 3. Think about plans for the App Store.
 4. Plan for the addition of further features.
