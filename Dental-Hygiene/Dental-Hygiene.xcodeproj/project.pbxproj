@@ -25,6 +25,8 @@
 		BA198195236429EB00777F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA198194236429EB00777F8F /* Assets.xcassets */; };
 		BA198198236429EB00777F8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA198197236429EB00777F8F /* Preview Assets.xcassets */; };
 		BA19819C236429EB00777F8F /* Dental Hygiene.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BA19817B236429E800777F8F /* Dental Hygiene.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BA1981A8236435A400777F8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1981A7236435A400777F8F /* HealthKit.framework */; };
+		BA1981AB23643AC100777F8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1981AA23643AC100777F8F /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,10 @@
 		BA198194236429EB00777F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA198197236429EB00777F8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA198199236429EB00777F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA1981A5236435A400777F8F /* Dental-Hygiene.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dental-Hygiene.entitlements"; sourceTree = "<group>"; };
+		BA1981A7236435A400777F8F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		BA1981A923643AC100777F8F /* Dental Hygiene Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dental Hygiene Extension.entitlements"; sourceTree = "<group>"; };
+		BA1981AA23643AC100777F8F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1981A8236435A400777F8F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1981AB23643AC100777F8F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +161,7 @@
 				BA19817C236429E800777F8F /* Dental Hygiene */,
 				BA19818B236429EA00777F8F /* Dental Hygiene Extension */,
 				BA198147236427F200777F8F /* Products */,
+				BA1981A6236435A400777F8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +180,7 @@
 		BA198148236427F200777F8F /* Dental-Hygiene */ = {
 			isa = PBXGroup;
 			children = (
+				BA1981A5236435A400777F8F /* Dental-Hygiene.entitlements */,
 				BA198149236427F200777F8F /* AppDelegate.swift */,
 				BA19814B236427F200777F8F /* SceneDelegate.swift */,
 				BA19814D236427F200777F8F /* ContentView.swift */,
@@ -221,6 +231,7 @@
 		BA19818B236429EA00777F8F /* Dental Hygiene Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BA1981A923643AC100777F8F /* Dental Hygiene Extension.entitlements */,
 				BA19818C236429EA00777F8F /* ContentView.swift */,
 				BA19818E236429EA00777F8F /* HostingController.swift */,
 				BA198190236429EA00777F8F /* ExtensionDelegate.swift */,
@@ -238,6 +249,15 @@
 				BA198197236429EB00777F8F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA1981A6236435A400777F8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA1981AA23643AC100777F8F /* HealthKit.framework */,
+				BA1981A7236435A400777F8F /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -629,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dental-Hygiene/Dental-Hygiene.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dental-Hygiene/Preview Content\"";
 				DEVELOPMENT_TEAM = FGMG6GZVKT;
@@ -649,6 +670,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dental-Hygiene/Dental-Hygiene.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dental-Hygiene/Preview Content\"";
 				DEVELOPMENT_TEAM = FGMG6GZVKT;
@@ -753,6 +775,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Dental Hygiene Extension/Dental Hygiene Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dental Hygiene Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = FGMG6GZVKT;
@@ -777,6 +800,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Dental Hygiene Extension/Dental Hygiene Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dental Hygiene Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = FGMG6GZVKT;
