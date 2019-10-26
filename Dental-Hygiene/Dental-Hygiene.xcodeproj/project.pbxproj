@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA19814A236427F200777F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA198149236427F200777F8F /* AppDelegate.swift */; };
+		BA19814C236427F200777F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA19814B236427F200777F8F /* SceneDelegate.swift */; };
+		BA19814E236427F200777F8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA19814D236427F200777F8F /* ContentView.swift */; };
+		BA198150236427F500777F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA19814F236427F500777F8F /* Assets.xcassets */; };
+		BA198153236427F500777F8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA198152236427F500777F8F /* Preview Assets.xcassets */; };
+		BA198156236427F500777F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA198154236427F500777F8F /* LaunchScreen.storyboard */; };
+		BA198161236427F500777F8F /* Dental_HygieneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA198160236427F500777F8F /* Dental_HygieneTests.swift */; };
+		BA19816C236427F500777F8F /* Dental_HygieneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA19816B236427F500777F8F /* Dental_HygieneUITests.swift */; };
+		BA19817F236429E800777F8F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA19817D236429E800777F8F /* Interface.storyboard */; };
+		BA198181236429EA00777F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA198180236429EA00777F8F /* Assets.xcassets */; };
+		BA198188236429EA00777F8F /* Dental Hygiene Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BA198187236429EA00777F8F /* Dental Hygiene Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BA19818D236429EA00777F8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA19818C236429EA00777F8F /* ContentView.swift */; };
+		BA19818F236429EA00777F8F /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA19818E236429EA00777F8F /* HostingController.swift */; };
+		BA198191236429EA00777F8F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA198190236429EA00777F8F /* ExtensionDelegate.swift */; };
+		BA198193236429EA00777F8F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA198192236429EA00777F8F /* ComplicationController.swift */; };
+		BA198195236429EB00777F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA198194236429EB00777F8F /* Assets.xcassets */; };
+		BA198198236429EB00777F8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA198197236429EB00777F8F /* Preview Assets.xcassets */; };
+		BA19819C236429EB00777F8F /* Dental Hygiene.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BA19817B236429E800777F8F /* Dental Hygiene.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA19815D236427F500777F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA19813E236427F200777F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA198145236427F200777F8F;
+			remoteInfo = "Dental-Hygiene";
+		};
+		BA198168236427F500777F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA19813E236427F200777F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA198145236427F200777F8F;
+			remoteInfo = "Dental-Hygiene";
+		};
+		BA198189236429EA00777F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA19813E236427F200777F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA198186236429EA00777F8F;
+			remoteInfo = "Dental Hygiene Extension";
+		};
+		BA19819A236429EB00777F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA19813E236427F200777F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA19817A236429E800777F8F;
+			remoteInfo = "Dental Hygiene";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA1981A0236429EB00777F8F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BA198188236429EA00777F8F /* Dental Hygiene Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA1981A4236429EB00777F8F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BA19819C236429EB00777F8F /* Dental Hygiene.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BA198146236427F200777F8F /* Dental-Hygiene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dental-Hygiene.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA198149236427F200777F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA19814B236427F200777F8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BA19814D236427F200777F8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA19814F236427F500777F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA198152236427F500777F8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA198155236427F500777F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA198157236427F500777F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA19815C236427F500777F8F /* Dental-HygieneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dental-HygieneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA198160236427F500777F8F /* Dental_HygieneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dental_HygieneTests.swift; sourceTree = "<group>"; };
+		BA198162236427F500777F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA198167236427F500777F8F /* Dental-HygieneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dental-HygieneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA19816B236427F500777F8F /* Dental_HygieneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dental_HygieneUITests.swift; sourceTree = "<group>"; };
+		BA19816D236427F500777F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA19817B236429E800777F8F /* Dental Hygiene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dental Hygiene.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA19817E236429E800777F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BA198180236429EA00777F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA198182236429EA00777F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA198187236429EA00777F8F /* Dental Hygiene Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Dental Hygiene Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA19818C236429EA00777F8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA19818E236429EA00777F8F /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		BA198190236429EA00777F8F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BA198192236429EA00777F8F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		BA198194236429EB00777F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA198197236429EB00777F8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA198199236429EB00777F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA198143236427F200777F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA198159236427F500777F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA198164236427F500777F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA198184236429EA00777F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA19813D236427F200777F8F = {
+			isa = PBXGroup;
+			children = (
+				BA198148236427F200777F8F /* Dental-Hygiene */,
+				BA19815F236427F500777F8F /* Dental-HygieneTests */,
+				BA19816A236427F500777F8F /* Dental-HygieneUITests */,
+				BA19817C236429E800777F8F /* Dental Hygiene */,
+				BA19818B236429EA00777F8F /* Dental Hygiene Extension */,
+				BA198147236427F200777F8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA198147236427F200777F8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA198146236427F200777F8F /* Dental-Hygiene.app */,
+				BA19815C236427F500777F8F /* Dental-HygieneTests.xctest */,
+				BA198167236427F500777F8F /* Dental-HygieneUITests.xctest */,
+				BA19817B236429E800777F8F /* Dental Hygiene.app */,
+				BA198187236429EA00777F8F /* Dental Hygiene Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA198148236427F200777F8F /* Dental-Hygiene */ = {
+			isa = PBXGroup;
+			children = (
+				BA198149236427F200777F8F /* AppDelegate.swift */,
+				BA19814B236427F200777F8F /* SceneDelegate.swift */,
+				BA19814D236427F200777F8F /* ContentView.swift */,
+				BA19814F236427F500777F8F /* Assets.xcassets */,
+				BA198154236427F500777F8F /* LaunchScreen.storyboard */,
+				BA198157236427F500777F8F /* Info.plist */,
+				BA198151236427F500777F8F /* Preview Content */,
+			);
+			path = "Dental-Hygiene";
+			sourceTree = "<group>";
+		};
+		BA198151236427F500777F8F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BA198152236427F500777F8F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA19815F236427F500777F8F /* Dental-HygieneTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA198160236427F500777F8F /* Dental_HygieneTests.swift */,
+				BA198162236427F500777F8F /* Info.plist */,
+			);
+			path = "Dental-HygieneTests";
+			sourceTree = "<group>";
+		};
+		BA19816A236427F500777F8F /* Dental-HygieneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA19816B236427F500777F8F /* Dental_HygieneUITests.swift */,
+				BA19816D236427F500777F8F /* Info.plist */,
+			);
+			path = "Dental-HygieneUITests";
+			sourceTree = "<group>";
+		};
+		BA19817C236429E800777F8F /* Dental Hygiene */ = {
+			isa = PBXGroup;
+			children = (
+				BA19817D236429E800777F8F /* Interface.storyboard */,
+				BA198180236429EA00777F8F /* Assets.xcassets */,
+				BA198182236429EA00777F8F /* Info.plist */,
+			);
+			path = "Dental Hygiene";
+			sourceTree = "<group>";
+		};
+		BA19818B236429EA00777F8F /* Dental Hygiene Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BA19818C236429EA00777F8F /* ContentView.swift */,
+				BA19818E236429EA00777F8F /* HostingController.swift */,
+				BA198190236429EA00777F8F /* ExtensionDelegate.swift */,
+				BA198192236429EA00777F8F /* ComplicationController.swift */,
+				BA198194236429EB00777F8F /* Assets.xcassets */,
+				BA198199236429EB00777F8F /* Info.plist */,
+				BA198196236429EB00777F8F /* Preview Content */,
+			);
+			path = "Dental Hygiene Extension";
+			sourceTree = "<group>";
+		};
+		BA198196236429EB00777F8F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BA198197236429EB00777F8F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA198145236427F200777F8F /* Dental-Hygiene */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA198170236427F500777F8F /* Build configuration list for PBXNativeTarget "Dental-Hygiene" */;
+			buildPhases = (
+				BA198142236427F200777F8F /* Sources */,
+				BA198143236427F200777F8F /* Frameworks */,
+				BA198144236427F200777F8F /* Resources */,
+				BA1981A4236429EB00777F8F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA19819B236429EB00777F8F /* PBXTargetDependency */,
+			);
+			name = "Dental-Hygiene";
+			productName = "Dental-Hygiene";
+			productReference = BA198146236427F200777F8F /* Dental-Hygiene.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA19815B236427F500777F8F /* Dental-HygieneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA198173236427F500777F8F /* Build configuration list for PBXNativeTarget "Dental-HygieneTests" */;
+			buildPhases = (
+				BA198158236427F500777F8F /* Sources */,
+				BA198159236427F500777F8F /* Frameworks */,
+				BA19815A236427F500777F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA19815E236427F500777F8F /* PBXTargetDependency */,
+			);
+			name = "Dental-HygieneTests";
+			productName = "Dental-HygieneTests";
+			productReference = BA19815C236427F500777F8F /* Dental-HygieneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA198166236427F500777F8F /* Dental-HygieneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA198176236427F500777F8F /* Build configuration list for PBXNativeTarget "Dental-HygieneUITests" */;
+			buildPhases = (
+				BA198163236427F500777F8F /* Sources */,
+				BA198164236427F500777F8F /* Frameworks */,
+				BA198165236427F500777F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA198169236427F500777F8F /* PBXTargetDependency */,
+			);
+			name = "Dental-HygieneUITests";
+			productName = "Dental-HygieneUITests";
+			productReference = BA198167236427F500777F8F /* Dental-HygieneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BA19817A236429E800777F8F /* Dental Hygiene */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA1981A1236429EB00777F8F /* Build configuration list for PBXNativeTarget "Dental Hygiene" */;
+			buildPhases = (
+				BA198179236429E800777F8F /* Resources */,
+				BA1981A0236429EB00777F8F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA19818A236429EA00777F8F /* PBXTargetDependency */,
+			);
+			name = "Dental Hygiene";
+			productName = "Dental Hygiene";
+			productReference = BA19817B236429E800777F8F /* Dental Hygiene.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BA198186236429EA00777F8F /* Dental Hygiene Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA19819D236429EB00777F8F /* Build configuration list for PBXNativeTarget "Dental Hygiene Extension" */;
+			buildPhases = (
+				BA198183236429EA00777F8F /* Sources */,
+				BA198184236429EA00777F8F /* Frameworks */,
+				BA198185236429EA00777F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dental Hygiene Extension";
+			productName = "Dental Hygiene Extension";
+			productReference = BA198187236429EA00777F8F /* Dental Hygiene Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA19813E236427F200777F8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Mayur Dhaka";
+				TargetAttributes = {
+					BA198145236427F200777F8F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					BA19815B236427F500777F8F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = BA198145236427F200777F8F;
+					};
+					BA198166236427F500777F8F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = BA198145236427F200777F8F;
+					};
+					BA19817A236429E800777F8F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					BA198186236429EA00777F8F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = BA198141236427F200777F8F /* Build configuration list for PBXProject "Dental-Hygiene" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA19813D236427F200777F8F;
+			productRefGroup = BA198147236427F200777F8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA198145236427F200777F8F /* Dental-Hygiene */,
+				BA19815B236427F500777F8F /* Dental-HygieneTests */,
+				BA198166236427F500777F8F /* Dental-HygieneUITests */,
+				BA19817A236429E800777F8F /* Dental Hygiene */,
+				BA198186236429EA00777F8F /* Dental Hygiene Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA198144236427F200777F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA198156236427F500777F8F /* LaunchScreen.storyboard in Resources */,
+				BA198153236427F500777F8F /* Preview Assets.xcassets in Resources */,
+				BA198150236427F500777F8F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA19815A236427F500777F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA198165236427F500777F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA198179236429E800777F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA198181236429EA00777F8F /* Assets.xcassets in Resources */,
+				BA19817F236429E800777F8F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA198185236429EA00777F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA198198236429EB00777F8F /* Preview Assets.xcassets in Resources */,
+				BA198195236429EB00777F8F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA198142236427F200777F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA19814A236427F200777F8F /* AppDelegate.swift in Sources */,
+				BA19814C236427F200777F8F /* SceneDelegate.swift in Sources */,
+				BA19814E236427F200777F8F /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA198158236427F500777F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA198161236427F500777F8F /* Dental_HygieneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA198163236427F500777F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA19816C236427F500777F8F /* Dental_HygieneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA198183236429EA00777F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA19818F236429EA00777F8F /* HostingController.swift in Sources */,
+				BA198193236429EA00777F8F /* ComplicationController.swift in Sources */,
+				BA19818D236429EA00777F8F /* ContentView.swift in Sources */,
+				BA198191236429EA00777F8F /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA19815E236427F500777F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA198145236427F200777F8F /* Dental-Hygiene */;
+			targetProxy = BA19815D236427F500777F8F /* PBXContainerItemProxy */;
+		};
+		BA198169236427F500777F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA198145236427F200777F8F /* Dental-Hygiene */;
+			targetProxy = BA198168236427F500777F8F /* PBXContainerItemProxy */;
+		};
+		BA19818A236429EA00777F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA198186236429EA00777F8F /* Dental Hygiene Extension */;
+			targetProxy = BA198189236429EA00777F8F /* PBXContainerItemProxy */;
+		};
+		BA19819B236429EB00777F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA19817A236429E800777F8F /* Dental Hygiene */;
+			targetProxy = BA19819A236429EB00777F8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA198154236427F500777F8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA198155236427F500777F8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BA19817D236429E800777F8F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA19817E236429E800777F8F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA19816E236427F500777F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA19816F236427F500777F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA198171236427F500777F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Dental-Hygiene/Preview Content\"";
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Dental-Hygiene/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.md.Dental-Hygiene";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA198172236427F500777F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Dental-Hygiene/Preview Content\"";
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Dental-Hygiene/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.md.Dental-Hygiene";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA198174236427F500777F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				INFOPLIST_FILE = "Dental-HygieneTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.md.Dental-HygieneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dental-Hygiene.app/Dental-Hygiene";
+			};
+			name = Debug;
+		};
+		BA198175236427F500777F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				INFOPLIST_FILE = "Dental-HygieneTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.md.Dental-HygieneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dental-Hygiene.app/Dental-Hygiene";
+			};
+			name = Release;
+		};
+		BA198177236427F500777F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				INFOPLIST_FILE = "Dental-HygieneUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.md.Dental-HygieneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dental-Hygiene";
+			};
+			name = Debug;
+		};
+		BA198178236427F500777F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				INFOPLIST_FILE = "Dental-HygieneUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.md.Dental-HygieneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dental-Hygiene";
+			};
+			name = Release;
+		};
+		BA19819E236429EB00777F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Dental Hygiene Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Dental Hygiene Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.md.Dental-Hygiene.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		BA19819F236429EB00777F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Dental Hygiene Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Dental Hygiene Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.md.Dental-Hygiene.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		BA1981A2236429EB00777F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				IBSC_MODULE = Dental_Hygiene_Extension;
+				INFOPLIST_FILE = "Dental Hygiene/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.md.Dental-Hygiene.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		BA1981A3236429EB00777F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				IBSC_MODULE = Dental_Hygiene_Extension;
+				INFOPLIST_FILE = "Dental Hygiene/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.md.Dental-Hygiene.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA198141236427F200777F8F /* Build configuration list for PBXProject "Dental-Hygiene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA19816E236427F500777F8F /* Debug */,
+				BA19816F236427F500777F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA198170236427F500777F8F /* Build configuration list for PBXNativeTarget "Dental-Hygiene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA198171236427F500777F8F /* Debug */,
+				BA198172236427F500777F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA198173236427F500777F8F /* Build configuration list for PBXNativeTarget "Dental-HygieneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA198174236427F500777F8F /* Debug */,
+				BA198175236427F500777F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA198176236427F500777F8F /* Build configuration list for PBXNativeTarget "Dental-HygieneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA198177236427F500777F8F /* Debug */,
+				BA198178236427F500777F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA19819D236429EB00777F8F /* Build configuration list for PBXNativeTarget "Dental Hygiene Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA19819E236429EB00777F8F /* Debug */,
+				BA19819F236429EB00777F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA1981A1236429EB00777F8F /* Build configuration list for PBXNativeTarget "Dental Hygiene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA1981A2236429EB00777F8F /* Debug */,
+				BA1981A3236429EB00777F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA19813E236427F200777F8F /* Project object */;
+}
