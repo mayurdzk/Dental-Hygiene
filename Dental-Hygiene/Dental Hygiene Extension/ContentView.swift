@@ -6,11 +6,25 @@
 //  Copyright © 2019 Mayur Dhaka. All rights reserved.
 //
 
+import Combine
+import DHTAccess
+import HealthKit
 import SwiftUI
 
+
 struct ContentView: View {
+    @State private var isUserBrushing: Bool = false
+    
     var body: some View {
-        Text("Hello World")
+        VStack {
+            Button(action: {
+                self.isUserBrushing.toggle()
+            }, label: { Text(
+                // TODO: Use localisation
+                isUserBrushing ? "Stop" : "Start"
+                )
+            })
+        }
     }
 }
 

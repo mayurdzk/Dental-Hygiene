@@ -21,7 +21,7 @@ public class DHTAccess {
     /// to the user's HK store.
     ///
     /// It is also assumed, of course, that the device the user is using this app on *supports* HealthKit.
-    init(hkStore: HKHealthStore) {
+    public init(hkStore: HKHealthStore) {
         self.hkStore = hkStore
     }
     
