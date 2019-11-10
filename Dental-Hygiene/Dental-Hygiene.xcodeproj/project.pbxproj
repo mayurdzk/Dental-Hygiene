@@ -30,6 +30,10 @@
 		BA248E3F23645F27002E28FE /* libDHTAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9DDBE62364537600CD268E /* libDHTAccess.a */; };
 		BA9DDBE92364537600CD268E /* DHTAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9DDBE82364537600CD268E /* DHTAccess.swift */; };
 		BA9DDBF0236459B300CD268E /* DHTAccessError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9DDBEE2364585400CD268E /* DHTAccessError.swift */; };
+		BAC53C6B2376E823006EAB61 /* DHTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC53C6A2376E823006EAB61 /* DHTimer.swift */; };
+		BAC53C6C2376E844006EAB61 /* libDHTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC53C632376E7EF006EAB61 /* libDHTimer.a */; };
+		BAC53C702376E8D9006EAB61 /* SmallTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC53C6F2376E8D9006EAB61 /* SmallTime.swift */; };
+		BAE472342376F815003C1E0C /* libDHTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC53C632376E7EF006EAB61 /* libDHTimer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,20 @@
 			remoteGlobalIDString = BA9DDBE52364537600CD268E;
 			remoteInfo = DHTAccess;
 		};
+		BAC53C422376E4EF006EAB61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA19813E236427F200777F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA198145236427F200777F8F;
+			remoteInfo = "Dental-Hygiene";
+		};
+		BAC53C6D2376E844006EAB61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA19813E236427F200777F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAC53C622376E7EF006EAB61;
+			remoteInfo = DHTimer;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -94,6 +112,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BA9DDBE42364537600CD268E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC53C4D2376E4EF006EAB61 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC53C5E2376E68C006EAB61 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC53C612376E7EF006EAB61 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -138,6 +185,10 @@
 		BA9DDBE62364537600CD268E /* libDHTAccess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHTAccess.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9DDBE82364537600CD268E /* DHTAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTAccess.swift; sourceTree = "<group>"; };
 		BA9DDBEE2364585400CD268E /* DHTAccessError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTAccessError.swift; sourceTree = "<group>"; };
+		BAC53C3E2376E4EF006EAB61 /* DHTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DHTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC53C632376E7EF006EAB61 /* libDHTimer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHTimer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC53C6A2376E823006EAB61 /* DHTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHTimer.swift; sourceTree = "<group>"; };
+		BAC53C6F2376E8D9006EAB61 /* SmallTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,11 +219,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA248E3F23645F27002E28FE /* libDHTAccess.a in Frameworks */,
+				BAC53C6C2376E844006EAB61 /* libDHTimer.a in Frameworks */,
 				BA1981AB23643AC100777F8F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BA9DDBE32364537600CD268E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE472342376F815003C1E0C /* libDHTimer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC53C3B2376E4EF006EAB61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC53C602376E7EF006EAB61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -191,6 +258,7 @@
 				BA19817C236429E800777F8F /* Dental Hygiene */,
 				BA19818B236429EA00777F8F /* Dental Hygiene Extension */,
 				BA9DDBE72364537600CD268E /* DHTAccess */,
+				BAC53C642376E7EF006EAB61 /* DHTimer */,
 				BA198147236427F200777F8F /* Products */,
 				BA1981A6236435A400777F8F /* Frameworks */,
 			);
@@ -205,6 +273,8 @@
 				BA19817B236429E800777F8F /* Dental Hygiene.app */,
 				BA198187236429EA00777F8F /* Dental Hygiene Extension.appex */,
 				BA9DDBE62364537600CD268E /* libDHTAccess.a */,
+				BAC53C3E2376E4EF006EAB61 /* DHTimerTests.xctest */,
+				BAC53C632376E7EF006EAB61 /* libDHTimer.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,6 +371,15 @@
 			path = DHTAccess;
 			sourceTree = "<group>";
 		};
+		BAC53C642376E7EF006EAB61 /* DHTimer */ = {
+			isa = PBXGroup;
+			children = (
+				BAC53C6A2376E823006EAB61 /* DHTimer.swift */,
+				BAC53C6F2376E8D9006EAB61 /* SmallTime.swift */,
+			);
+			path = DHTimer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -312,6 +391,7 @@
 				BA198143236427F200777F8F /* Frameworks */,
 				BA198144236427F200777F8F /* Resources */,
 				BA1981A4236429EB00777F8F /* Embed Watch Content */,
+				BAC53C4D2376E4EF006EAB61 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -383,11 +463,13 @@
 				BA198183236429EA00777F8F /* Sources */,
 				BA198184236429EA00777F8F /* Frameworks */,
 				BA198185236429EA00777F8F /* Resources */,
+				BAC53C5E2376E68C006EAB61 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BA248E4123645F27002E28FE /* PBXTargetDependency */,
+				BAC53C6E2376E844006EAB61 /* PBXTargetDependency */,
 			);
 			name = "Dental Hygiene Extension";
 			productName = "Dental Hygiene Extension";
@@ -409,6 +491,41 @@
 			name = DHTAccess;
 			productName = DHTBAccess;
 			productReference = BA9DDBE62364537600CD268E /* libDHTAccess.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BAC53C3D2376E4EF006EAB61 /* DHTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC53C532376E4EF006EAB61 /* Build configuration list for PBXNativeTarget "DHTimerTests" */;
+			buildPhases = (
+				BAC53C3A2376E4EF006EAB61 /* Sources */,
+				BAC53C3B2376E4EF006EAB61 /* Frameworks */,
+				BAC53C3C2376E4EF006EAB61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAC53C432376E4EF006EAB61 /* PBXTargetDependency */,
+			);
+			name = DHTimerTests;
+			productName = DHTimerTests;
+			productReference = BAC53C3E2376E4EF006EAB61 /* DHTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAC53C622376E7EF006EAB61 /* DHTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC53C672376E7EF006EAB61 /* Build configuration list for PBXNativeTarget "DHTimer" */;
+			buildPhases = (
+				BAC53C5F2376E7EF006EAB61 /* Sources */,
+				BAC53C602376E7EF006EAB61 /* Frameworks */,
+				BAC53C612376E7EF006EAB61 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DHTimer;
+			productName = DHTimer;
+			productReference = BAC53C632376E7EF006EAB61 /* libDHTimer.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -441,6 +558,13 @@
 					BA9DDBE52364537600CD268E = {
 						CreatedOnToolsVersion = 11.1;
 					};
+					BAC53C3D2376E4EF006EAB61 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = BA198145236427F200777F8F;
+					};
+					BAC53C622376E7EF006EAB61 = {
+						CreatedOnToolsVersion = 11.1;
+					};
 				};
 			};
 			buildConfigurationList = BA198141236427F200777F8F /* Build configuration list for PBXProject "Dental-Hygiene" */;
@@ -462,6 +586,8 @@
 				BA19817A236429E800777F8F /* Dental Hygiene */,
 				BA198186236429EA00777F8F /* Dental Hygiene Extension */,
 				BA9DDBE52364537600CD268E /* DHTAccess */,
+				BAC53C3D2376E4EF006EAB61 /* DHTimerTests */,
+				BAC53C622376E7EF006EAB61 /* DHTimer */,
 			);
 		};
 /* End PBXProject section */
@@ -506,6 +632,13 @@
 			files = (
 				BA198198236429EB00777F8F /* Preview Assets.xcassets in Resources */,
 				BA198195236429EB00777F8F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC53C3C2376E4EF006EAB61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +691,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAC53C3A2376E4EF006EAB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC53C5F2376E7EF006EAB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC53C702376E8D9006EAB61 /* SmallTime.swift in Sources */,
+				BAC53C6B2376E823006EAB61 /* DHTimer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -585,6 +734,16 @@
 			isa = PBXTargetDependency;
 			target = BA9DDBE52364537600CD268E /* DHTAccess */;
 			targetProxy = BA248E4023645F27002E28FE /* PBXContainerItemProxy */;
+		};
+		BAC53C432376E4EF006EAB61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA198145236427F200777F8F /* Dental-Hygiene */;
+			targetProxy = BAC53C422376E4EF006EAB61 /* PBXContainerItemProxy */;
+		};
+		BAC53C6E2376E844006EAB61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAC53C622376E7EF006EAB61 /* DHTimer */;
+			targetProxy = BAC53C6D2376E844006EAB61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -966,6 +1125,74 @@
 			};
 			name = Release;
 		};
+		BAC53C502376E4EF006EAB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				INFOPLIST_FILE = DHTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.DHTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dental-Hygiene.app/Dental-Hygiene";
+			};
+			name = Debug;
+		};
+		BAC53C512376E4EF006EAB61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				INFOPLIST_FILE = DHTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.DHTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dental-Hygiene.app/Dental-Hygiene";
+			};
+			name = Release;
+		};
+		BAC53C682376E7EF006EAB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		BAC53C692376E7EF006EAB61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FGMG6GZVKT;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1028,6 +1255,24 @@
 			buildConfigurations = (
 				BA9DDBEA2364537600CD268E /* Debug */,
 				BA9DDBEB2364537600CD268E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC53C532376E4EF006EAB61 /* Build configuration list for PBXNativeTarget "DHTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC53C502376E4EF006EAB61 /* Debug */,
+				BAC53C512376E4EF006EAB61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC53C672376E7EF006EAB61 /* Build configuration list for PBXNativeTarget "DHTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC53C682376E7EF006EAB61 /* Debug */,
+				BAC53C692376E7EF006EAB61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

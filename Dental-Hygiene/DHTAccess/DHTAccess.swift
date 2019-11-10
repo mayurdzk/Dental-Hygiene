@@ -29,7 +29,7 @@ public class DHTAccess {
     /// Logs a toothbrush event in the user's health kit store.
     /// - Parameter startTime: The time the user started brushing their teeth.
     /// - Parameter duration: The duration for which the user brushed their teeth.
-    public func logToothbrushEvent(startingAt startTime: Date, duration: TimeInterval) -> Future<Void, Error> {
+    public func logToothbrushEvent(startingAt startTime: Date, duration: TimeInterval) -> Future<Void, DHTAccessError> {
         let moot = 0
         let endTime = startTime.addingTimeInterval(duration)
         
@@ -58,3 +58,17 @@ public class DHTAccess {
         }
     }
 }
+
+#if canImport(DHTimer)
+
+import DHTimer
+
+extension DHTAccess {
+    public func logToothbrushEventEndedNow(goingOnFor duration: SmallTime) -> Future<Void, DHTAccessError> {
+        let toothbrushDuration = duration.timeDuration()
+        let startDate = Date().addingTimeInterval(-toothbrushDuration)
+        return logToothbrushEvent(startingAt: startDate, duration: toothbrushDuration)
+    }
+}
+
+#endif

@@ -48,6 +48,16 @@
                ReferencedContainer = "container:Dental-Hygiene.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BAC53C3D2376E4EF006EAB61"
+               BuildableName = "DHTimerTests.xctest"
+               BlueprintName = "DHTimerTests"
+               ReferencedContainer = "container:Dental-Hygiene.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

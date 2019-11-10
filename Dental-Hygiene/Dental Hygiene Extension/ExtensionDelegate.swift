@@ -6,12 +6,16 @@
 //  Copyright © 2019 Mayur Dhaka. All rights reserved.
 //
 
+import HealthKit
 import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
-        // Perform any final initialization of your application.
+        let allTypes = Set([HKObjectType.categoryType(forIdentifier: .toothbrushingEvent)!])
+        HKHealthStore().requestAuthorization(toShare: allTypes, read: nil) { (_, _) in
+            
+        }
     }
 
     func applicationDidBecomeActive() {
