@@ -14,7 +14,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
     func applicationDidFinishLaunching() {
         let allTypes = Set([HKObjectType.categoryType(forIdentifier: .toothbrushingEvent)!])
         HKHealthStore().requestAuthorization(toShare: allTypes, read: nil) { (_, _) in
-            
+            // This is only temporary.
+            // There needs to be a better place to handle this authorisation request.
         }
     }
 
