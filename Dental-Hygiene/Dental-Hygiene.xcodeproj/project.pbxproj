@@ -28,6 +28,8 @@
 		BA1981A8236435A400777F8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1981A7236435A400777F8F /* HealthKit.framework */; };
 		BA1981AB23643AC100777F8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1981AA23643AC100777F8F /* HealthKit.framework */; };
 		BA248E3F23645F27002E28FE /* libDHTAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9DDBE62364537600CD268E /* libDHTAccess.a */; };
+		BA693A74237A3031008C4951 /* HKStoreAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA693A73237A3031008C4951 /* HKStoreAccess.swift */; };
+		BA693A75237A3244008C4951 /* libDHTAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9DDBE62364537600CD268E /* libDHTAccess.a */; };
 		BA9DDBE92364537600CD268E /* DHTAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9DDBE82364537600CD268E /* DHTAccess.swift */; };
 		BA9DDBF0236459B300CD268E /* DHTAccessError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9DDBEE2364585400CD268E /* DHTAccessError.swift */; };
 		BAC53C6B2376E823006EAB61 /* DHTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC53C6A2376E823006EAB61 /* DHTimer.swift */; };
@@ -66,6 +68,13 @@
 			remoteInfo = "Dental Hygiene";
 		};
 		BA248E4023645F27002E28FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA19813E236427F200777F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA9DDBE52364537600CD268E;
+			remoteInfo = DHTAccess;
+		};
+		BA693A76237A3244008C4951 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BA19813E236427F200777F8F /* Project object */;
 			proxyType = 1;
@@ -182,6 +191,7 @@
 		BA1981A7236435A400777F8F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BA1981A923643AC100777F8F /* Dental Hygiene Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dental Hygiene Extension.entitlements"; sourceTree = "<group>"; };
 		BA1981AA23643AC100777F8F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		BA693A73237A3031008C4951 /* HKStoreAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKStoreAccess.swift; sourceTree = "<group>"; };
 		BA9DDBE62364537600CD268E /* libDHTAccess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHTAccess.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9DDBE82364537600CD268E /* DHTAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTAccess.swift; sourceTree = "<group>"; };
 		BA9DDBEE2364585400CD268E /* DHTAccessError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTAccessError.swift; sourceTree = "<group>"; };
@@ -196,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA693A75237A3244008C4951 /* libDHTAccess.a in Frameworks */,
 				BA1981A8236435A400777F8F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +378,7 @@
 			children = (
 				BA9DDBE82364537600CD268E /* DHTAccess.swift */,
 				BA9DDBEE2364585400CD268E /* DHTAccessError.swift */,
+				BA693A73237A3031008C4951 /* HKStoreAccess.swift */,
 			);
 			path = DHTAccess;
 			sourceTree = "<group>";
@@ -397,6 +409,7 @@
 			);
 			dependencies = (
 				BA19819B236429EB00777F8F /* PBXTargetDependency */,
+				BA693A77237A3244008C4951 /* PBXTargetDependency */,
 			);
 			name = "Dental-Hygiene";
 			productName = "Dental-Hygiene";
@@ -688,6 +701,7 @@
 			files = (
 				BA9DDBE92364537600CD268E /* DHTAccess.swift in Sources */,
 				BA9DDBF0236459B300CD268E /* DHTAccessError.swift in Sources */,
+				BA693A74237A3031008C4951 /* HKStoreAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +748,11 @@
 			isa = PBXTargetDependency;
 			target = BA9DDBE52364537600CD268E /* DHTAccess */;
 			targetProxy = BA248E4023645F27002E28FE /* PBXContainerItemProxy */;
+		};
+		BA693A77237A3244008C4951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA9DDBE52364537600CD268E /* DHTAccess */;
+			targetProxy = BA693A76237A3244008C4951 /* PBXContainerItemProxy */;
 		};
 		BAC53C432376E4EF006EAB61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

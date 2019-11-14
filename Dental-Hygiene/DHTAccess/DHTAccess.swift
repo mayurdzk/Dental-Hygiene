@@ -57,6 +57,29 @@ public class DHTAccess {
             }
         }
     }
+    
+    /// Delivers to you healthkit samples from the user's healthkit data store for tooth brushing events.
+    /// Samples delivered lie between the `start` and `end` dates.
+    /// This method assumes `start` < `end`.
+    public func readToothBrushEvents(from start: Date, to end: Date) -> Future<[HKSample], DHTAccessError> {
+        let quantityType = HKSampleType.categoryType(forIdentifier: HKCategoryTypeIdentifier.toothbrushingEvent)!
+        let predicate = HKQuery.predicateForSamples(withStart: start, end: end, options: [])
+        
+        return Future { [weak self] signal in
+            let query = HKSampleQuery(
+                sampleType: quantityType,
+                predicate: predicate,
+                limit: HKObjectQueryNoLimit,
+                sortDescriptors: nil) { (query, samples, error) in
+                    guard error == nil else {
+                        signal(.failure(.hkReadFromStoreError(error!)))
+                        return
+                    }
+                    signal(.success(samples!))
+            }
+            self?.hkStore.execute(query)
+        }
+    }
 }
 
 #if canImport(DHTimer)

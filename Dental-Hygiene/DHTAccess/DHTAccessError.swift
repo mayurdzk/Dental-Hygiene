@@ -11,4 +11,6 @@
 public enum DHTAccessError: Error {
     case deinitialised
     case hkSaveInStoreError(Error)
+    case hkReadFromStoreError(Error)
+    case hkStoreAccessError(Error)
 }
