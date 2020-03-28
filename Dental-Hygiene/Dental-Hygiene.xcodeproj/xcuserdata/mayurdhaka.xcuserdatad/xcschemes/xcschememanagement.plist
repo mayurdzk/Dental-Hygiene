@@ -4,16 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DHTAccess.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>DHTimer.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
-		</dict>
 		<key>Dental Hygiene (Complication).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -53,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>BA9DDBE52364537600CD268E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAC53C622376E7EF006EAB61</key>
 		<dict>
 			<key>primary</key>
 			<true/>
