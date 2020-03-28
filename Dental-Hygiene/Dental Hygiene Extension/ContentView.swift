@@ -10,13 +10,13 @@ import Combine
 import DHTAccess
 import HealthKit
 import SwiftUI
-import DHTimer
+import DHTTimer
 
 struct ContentView: View {
     @State private var brushingTime = SmallTime()
     @State private var isUserBrushing: Bool = false
     private let healthStore = DHTAccess(hkStore: HKHealthStore())
-    private let timer: DHTimer = DHTimer()
+    private let timer: DHTTimer = DHTTimer()
     
     var body: some View {
         VStack {

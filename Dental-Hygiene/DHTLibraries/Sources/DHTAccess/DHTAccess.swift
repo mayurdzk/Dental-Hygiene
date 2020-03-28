@@ -83,9 +83,9 @@ public class DHTAccess {
     }
 }
 
-#if canImport(DHTimer)
+#if canImport(DHTTimer)
 
-import DHTimer
+import DHTTimer
 
 extension DHTAccess {
     public func logToothbrushEventEndedNow(goingOnFor duration: SmallTime) -> Future<Void, DHTAccessError> {

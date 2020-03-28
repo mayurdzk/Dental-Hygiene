@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,11 +27,11 @@
 		BA19819C236429EB00777F8F /* Dental Hygiene.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BA19817B236429E800777F8F /* Dental Hygiene.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BA1981A8236435A400777F8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1981A7236435A400777F8F /* HealthKit.framework */; };
 		BA1981AB23643AC100777F8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1981AA23643AC100777F8F /* HealthKit.framework */; };
-		BA248E3F23645F27002E28FE /* libDHTAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9DDBE62364537600CD268E /* libDHTAccess.a */; };
-		BA693A75237A3244008C4951 /* libDHTAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9DDBE62364537600CD268E /* libDHTAccess.a */; };
-		BAC53C6B2376E823006EAB61 /* DHTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC53C6A2376E823006EAB61 /* DHTimer.swift */; };
-		BAC53C6C2376E844006EAB61 /* libDHTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC53C632376E7EF006EAB61 /* libDHTimer.a */; };
-		BAC53C702376E8D9006EAB61 /* SmallTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC53C6F2376E8D9006EAB61 /* SmallTime.swift */; };
+		BAAA5CF2242F1E2A00333253 /* DHTLibraries in Resources */ = {isa = PBXBuildFile; fileRef = BAAA5CF1242F1E2A00333253 /* DHTLibraries */; };
+		BAAA5CF4242F1FD600333253 /* DHTAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BAAA5CF3242F1FD600333253 /* DHTAccess */; };
+		BAAA5CF6242F1FD600333253 /* DHTTimer in Frameworks */ = {isa = PBXBuildFile; productRef = BAAA5CF5242F1FD600333253 /* DHTTimer */; };
+		BAAA5CF8242F1FE000333253 /* DHTAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BAAA5CF7242F1FE000333253 /* DHTAccess */; };
+		BAAA5CFA242F1FE000333253 /* DHTTimer in Frameworks */ = {isa = PBXBuildFile; productRef = BAAA5CF9242F1FE000333253 /* DHTTimer */; };
 		BAE472342376F815003C1E0C /* libDHTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC53C632376E7EF006EAB61 /* libDHTimer.a */; };
 /* End PBXBuildFile section */
 
@@ -64,33 +64,12 @@
 			remoteGlobalIDString = BA19817A236429E800777F8F;
 			remoteInfo = "Dental Hygiene";
 		};
-		BA248E4023645F27002E28FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA19813E236427F200777F8F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA9DDBE52364537600CD268E;
-			remoteInfo = DHTAccess;
-		};
-		BA693A76237A3244008C4951 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA19813E236427F200777F8F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA9DDBE52364537600CD268E;
-			remoteInfo = DHTAccess;
-		};
 		BAC53C422376E4EF006EAB61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BA19813E236427F200777F8F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BA198145236427F200777F8F;
 			remoteInfo = "Dental-Hygiene";
-		};
-		BAC53C6D2376E844006EAB61 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA19813E236427F200777F8F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BAC53C622376E7EF006EAB61;
-			remoteInfo = DHTimer;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -189,11 +168,9 @@
 		BA1981A923643AC100777F8F /* Dental Hygiene Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dental Hygiene Extension.entitlements"; sourceTree = "<group>"; };
 		BA1981AA23643AC100777F8F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		BA9DDBE62364537600CD268E /* libDHTAccess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHTAccess.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAAA5CEE242F0AE600333253 /* DHTLibraries */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DHTLibraries; sourceTree = "<group>"; };
+		BAAA5CF1242F1E2A00333253 /* DHTLibraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DHTLibraries; sourceTree = "<group>"; };
 		BAC53C3E2376E4EF006EAB61 /* DHTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DHTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC53C632376E7EF006EAB61 /* libDHTimer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHTimer.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAC53C6A2376E823006EAB61 /* DHTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHTimer.swift; sourceTree = "<group>"; };
-		BAC53C6F2376E8D9006EAB61 /* SmallTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,8 +178,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA693A75237A3244008C4951 /* libDHTAccess.a in Frameworks */,
+				BAAA5CFA242F1FE000333253 /* DHTTimer in Frameworks */,
 				BA1981A8236435A400777F8F /* HealthKit.framework in Frameworks */,
+				BAAA5CF8242F1FE000333253 /* DHTAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +202,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA248E3F23645F27002E28FE /* libDHTAccess.a in Frameworks */,
-				BAC53C6C2376E844006EAB61 /* libDHTimer.a in Frameworks */,
+				BAAA5CF6242F1FD600333253 /* DHTTimer in Frameworks */,
 				BA1981AB23643AC100777F8F /* HealthKit.framework in Frameworks */,
+				BAAA5CF4242F1FD600333253 /* DHTAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,13 +236,12 @@
 		BA19813D236427F200777F8F = {
 			isa = PBXGroup;
 			children = (
-				BAAA5CED242F0A7900333253 /* DHTLibraries */,
+				BAAA5CF1242F1E2A00333253 /* DHTLibraries */,
 				BA198148236427F200777F8F /* Dental-Hygiene */,
 				BA19815F236427F500777F8F /* Dental-HygieneTests */,
 				BA19816A236427F500777F8F /* Dental-HygieneUITests */,
 				BA19817C236429E800777F8F /* Dental Hygiene */,
 				BA19818B236429EA00777F8F /* Dental Hygiene Extension */,
-				BAC53C642376E7EF006EAB61 /* DHTimer */,
 				BA198147236427F200777F8F /* Products */,
 				BA1981A6236435A400777F8F /* Frameworks */,
 			);
@@ -368,23 +345,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BAAA5CED242F0A7900333253 /* DHTLibraries */ = {
-			isa = PBXGroup;
-			children = (
-				BAAA5CEE242F0AE600333253 /* DHTLibraries */,
-			);
-			path = DHTLibraries;
-			sourceTree = "<group>";
-		};
-		BAC53C642376E7EF006EAB61 /* DHTimer */ = {
-			isa = PBXGroup;
-			children = (
-				BAC53C6A2376E823006EAB61 /* DHTimer.swift */,
-				BAC53C6F2376E8D9006EAB61 /* SmallTime.swift */,
-			);
-			path = DHTimer;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -402,9 +362,12 @@
 			);
 			dependencies = (
 				BA19819B236429EB00777F8F /* PBXTargetDependency */,
-				BA693A77237A3244008C4951 /* PBXTargetDependency */,
 			);
 			name = "Dental-Hygiene";
+			packageProductDependencies = (
+				BAAA5CF7242F1FE000333253 /* DHTAccess */,
+				BAAA5CF9242F1FE000333253 /* DHTTimer */,
+			);
 			productName = "Dental-Hygiene";
 			productReference = BA198146236427F200777F8F /* Dental-Hygiene.app */;
 			productType = "com.apple.product-type.application";
@@ -474,10 +437,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				BA248E4123645F27002E28FE /* PBXTargetDependency */,
-				BAC53C6E2376E844006EAB61 /* PBXTargetDependency */,
 			);
 			name = "Dental Hygiene Extension";
+			packageProductDependencies = (
+				BAAA5CF3242F1FD600333253 /* DHTAccess */,
+				BAAA5CF5242F1FD600333253 /* DHTTimer */,
+			);
 			productName = "Dental Hygiene Extension";
 			productReference = BA198187236429EA00777F8F /* Dental Hygiene Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -604,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA198156236427F500777F8F /* LaunchScreen.storyboard in Resources */,
+				BAAA5CF2242F1E2A00333253 /* DHTLibraries in Resources */,
 				BA198153236427F500777F8F /* Preview Assets.xcassets in Resources */,
 				BA198150236427F500777F8F /* Assets.xcassets in Resources */,
 			);
@@ -706,8 +672,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC53C702376E8D9006EAB61 /* SmallTime.swift in Sources */,
-				BAC53C6B2376E823006EAB61 /* DHTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,25 +698,10 @@
 			target = BA19817A236429E800777F8F /* Dental Hygiene */;
 			targetProxy = BA19819A236429EB00777F8F /* PBXContainerItemProxy */;
 		};
-		BA248E4123645F27002E28FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BA9DDBE52364537600CD268E /* DHTAccess */;
-			targetProxy = BA248E4023645F27002E28FE /* PBXContainerItemProxy */;
-		};
-		BA693A77237A3244008C4951 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BA9DDBE52364537600CD268E /* DHTAccess */;
-			targetProxy = BA693A76237A3244008C4951 /* PBXContainerItemProxy */;
-		};
 		BAC53C432376E4EF006EAB61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BA198145236427F200777F8F /* Dental-Hygiene */;
 			targetProxy = BAC53C422376E4EF006EAB61 /* PBXContainerItemProxy */;
-		};
-		BAC53C6E2376E844006EAB61 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BAC53C622376E7EF006EAB61 /* DHTimer */;
-			targetProxy = BAC53C6D2376E844006EAB61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1287,6 +1236,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BAAA5CF3242F1FD600333253 /* DHTAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DHTAccess;
+		};
+		BAAA5CF5242F1FD600333253 /* DHTTimer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DHTTimer;
+		};
+		BAAA5CF7242F1FE000333253 /* DHTAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DHTAccess;
+		};
+		BAAA5CF9242F1FE000333253 /* DHTTimer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DHTTimer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA19813E236427F200777F8F /* Project object */;
 }
