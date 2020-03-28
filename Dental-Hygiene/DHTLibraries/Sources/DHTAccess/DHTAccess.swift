@@ -6,6 +6,7 @@
 //  Copyright © 2019 Mayur Dhaka. All rights reserved.
 //
 
+#if canImport(HealthKit)
 import Combine
 import HealthKit
 
@@ -93,5 +94,7 @@ extension DHTAccess {
         return logToothbrushEvent(startingAt: startDate, duration: toothbrushDuration)
     }
 }
+
+#endif
 
 #endif

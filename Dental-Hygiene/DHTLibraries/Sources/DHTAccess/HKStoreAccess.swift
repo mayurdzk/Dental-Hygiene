@@ -6,6 +6,7 @@
 //  Copyright © 2019 Mayur Dhaka. All rights reserved.
 //
 
+#if canImport(HealthKit)
 import HealthKit
 import Combine
 
@@ -30,3 +31,4 @@ public func requestToothbrushReadAccess() -> Future<Void, DHTAccessError> {
         }
     }
 }
+#endif

@@ -28,10 +28,7 @@
 		BA1981A8236435A400777F8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1981A7236435A400777F8F /* HealthKit.framework */; };
 		BA1981AB23643AC100777F8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1981AA23643AC100777F8F /* HealthKit.framework */; };
 		BA248E3F23645F27002E28FE /* libDHTAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9DDBE62364537600CD268E /* libDHTAccess.a */; };
-		BA693A74237A3031008C4951 /* HKStoreAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA693A73237A3031008C4951 /* HKStoreAccess.swift */; };
 		BA693A75237A3244008C4951 /* libDHTAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9DDBE62364537600CD268E /* libDHTAccess.a */; };
-		BA9DDBE92364537600CD268E /* DHTAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9DDBE82364537600CD268E /* DHTAccess.swift */; };
-		BA9DDBF0236459B300CD268E /* DHTAccessError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9DDBEE2364585400CD268E /* DHTAccessError.swift */; };
 		BAC53C6B2376E823006EAB61 /* DHTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC53C6A2376E823006EAB61 /* DHTimer.swift */; };
 		BAC53C6C2376E844006EAB61 /* libDHTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC53C632376E7EF006EAB61 /* libDHTimer.a */; };
 		BAC53C702376E8D9006EAB61 /* SmallTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC53C6F2376E8D9006EAB61 /* SmallTime.swift */; };
@@ -191,10 +188,8 @@
 		BA1981A7236435A400777F8F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BA1981A923643AC100777F8F /* Dental Hygiene Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dental Hygiene Extension.entitlements"; sourceTree = "<group>"; };
 		BA1981AA23643AC100777F8F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
-		BA693A73237A3031008C4951 /* HKStoreAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKStoreAccess.swift; sourceTree = "<group>"; };
 		BA9DDBE62364537600CD268E /* libDHTAccess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHTAccess.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA9DDBE82364537600CD268E /* DHTAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTAccess.swift; sourceTree = "<group>"; };
-		BA9DDBEE2364585400CD268E /* DHTAccessError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTAccessError.swift; sourceTree = "<group>"; };
+		BAAA5CEE242F0AE600333253 /* DHTLibraries */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DHTLibraries; sourceTree = "<group>"; };
 		BAC53C3E2376E4EF006EAB61 /* DHTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DHTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC53C632376E7EF006EAB61 /* libDHTimer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHTimer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC53C6A2376E823006EAB61 /* DHTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHTimer.swift; sourceTree = "<group>"; };
@@ -263,12 +258,12 @@
 		BA19813D236427F200777F8F = {
 			isa = PBXGroup;
 			children = (
+				BAAA5CED242F0A7900333253 /* DHTLibraries */,
 				BA198148236427F200777F8F /* Dental-Hygiene */,
 				BA19815F236427F500777F8F /* Dental-HygieneTests */,
 				BA19816A236427F500777F8F /* Dental-HygieneUITests */,
 				BA19817C236429E800777F8F /* Dental Hygiene */,
 				BA19818B236429EA00777F8F /* Dental Hygiene Extension */,
-				BA9DDBE72364537600CD268E /* DHTAccess */,
 				BAC53C642376E7EF006EAB61 /* DHTimer */,
 				BA198147236427F200777F8F /* Products */,
 				BA1981A6236435A400777F8F /* Frameworks */,
@@ -373,14 +368,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BA9DDBE72364537600CD268E /* DHTAccess */ = {
+		BAAA5CED242F0A7900333253 /* DHTLibraries */ = {
 			isa = PBXGroup;
 			children = (
-				BA9DDBE82364537600CD268E /* DHTAccess.swift */,
-				BA9DDBEE2364585400CD268E /* DHTAccessError.swift */,
-				BA693A73237A3031008C4951 /* HKStoreAccess.swift */,
+				BAAA5CEE242F0AE600333253 /* DHTLibraries */,
 			);
-			path = DHTAccess;
+			path = DHTLibraries;
 			sourceTree = "<group>";
 		};
 		BAC53C642376E7EF006EAB61 /* DHTimer */ = {
@@ -699,9 +692,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA9DDBE92364537600CD268E /* DHTAccess.swift in Sources */,
-				BA9DDBF0236459B300CD268E /* DHTAccessError.swift in Sources */,
-				BA693A74237A3031008C4951 /* HKStoreAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
