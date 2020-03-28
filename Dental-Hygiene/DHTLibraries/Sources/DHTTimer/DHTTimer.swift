@@ -11,7 +11,7 @@ import Combine
 
 /// A re-usable timer that you can start and stop using those respective methods.
 /// DHTimer emits `StartTime` instances every second.
-public class DHTimer {
+public class DHTTimer {
     private var timerSubscription: AnyCancellable!
     public init() {}
     

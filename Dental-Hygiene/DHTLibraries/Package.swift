@@ -16,7 +16,7 @@ let package = Package(
             targets: ["DHTAccess"]),
         .library(
             name: "DHTTimer",
-            targets: ["DHTAccess"]),
+            targets: ["DHTTimer"]),
     ],
     targets: [
         .target(
