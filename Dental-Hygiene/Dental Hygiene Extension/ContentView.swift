@@ -33,6 +33,18 @@ struct ContentView: View {
                 isUserBrushing ? "Stop" : "Start"
                 )
             })
+            #if DEBUG
+            Button(action: {
+                let result = self.healthStore.logToothbrushEventEndedNow(goingOnFor: try! SmallTime(timeInterval: 120.0))
+                .map { (_) -> Void in
+                    print("Done")
+                }.mapError { (e) -> Error in
+                    print(e)
+                    return e
+                }
+                print(result)
+            }, label: { Text("2mins") })
+            #endif
         }
     }
     
