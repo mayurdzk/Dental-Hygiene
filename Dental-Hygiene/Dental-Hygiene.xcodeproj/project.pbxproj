@@ -27,6 +27,7 @@
 		BA19819C236429EB00777F8F /* Dental Hygiene.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BA19817B236429E800777F8F /* Dental Hygiene.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BA1981A8236435A400777F8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1981A7236435A400777F8F /* HealthKit.framework */; };
 		BA1981AB23643AC100777F8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1981AA23643AC100777F8F /* HealthKit.framework */; };
+		BA8834FF2438383D0047943C /* StartBrushingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8834FE2438383D0047943C /* StartBrushingView.swift */; };
 		BAAA5CF2242F1E2A00333253 /* DHTLibraries in Resources */ = {isa = PBXBuildFile; fileRef = BAAA5CF1242F1E2A00333253 /* DHTLibraries */; };
 		BAAA5CF4242F1FD600333253 /* DHTAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BAAA5CF3242F1FD600333253 /* DHTAccess */; };
 		BAAA5CF6242F1FD600333253 /* DHTTimer in Frameworks */ = {isa = PBXBuildFile; productRef = BAAA5CF5242F1FD600333253 /* DHTTimer */; };
@@ -167,6 +168,7 @@
 		BA1981A7236435A400777F8F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BA1981A923643AC100777F8F /* Dental Hygiene Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dental Hygiene Extension.entitlements"; sourceTree = "<group>"; };
 		BA1981AA23643AC100777F8F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		BA8834FE2438383D0047943C /* StartBrushingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBrushingView.swift; sourceTree = "<group>"; };
 		BA9DDBE62364537600CD268E /* libDHTAccess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHTAccess.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAA5CF1242F1E2A00333253 /* DHTLibraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DHTLibraries; sourceTree = "<group>"; };
 		BAC53C3E2376E4EF006EAB61 /* DHTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DHTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -316,6 +318,7 @@
 		BA19818B236429EA00777F8F /* Dental Hygiene Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BA8834FD243838230047943C /* Views */,
 				BA1981A923643AC100777F8F /* Dental Hygiene Extension.entitlements */,
 				BA19818C236429EA00777F8F /* ContentView.swift */,
 				BA19818E236429EA00777F8F /* HostingController.swift */,
@@ -343,6 +346,14 @@
 				BA1981A7236435A400777F8F /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA8834FD243838230047943C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA8834FE2438383D0047943C /* StartBrushingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -651,6 +662,7 @@
 				BA198193236429EA00777F8F /* ComplicationController.swift in Sources */,
 				BA19818D236429EA00777F8F /* ContentView.swift in Sources */,
 				BA198191236429EA00777F8F /* ExtensionDelegate.swift in Sources */,
+				BA8834FF2438383D0047943C /* StartBrushingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
