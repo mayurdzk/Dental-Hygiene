@@ -61,7 +61,6 @@ public class DHTAccess {
     
     public func todaysToothbrushEvents() -> ToothBrushEvents {
         let events = ToothBrushEvents(hkStore: hkStore)
-        events.foo()
         return events
     }
 }

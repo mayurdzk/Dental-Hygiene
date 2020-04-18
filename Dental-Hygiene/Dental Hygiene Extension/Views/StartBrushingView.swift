@@ -35,14 +35,10 @@ struct StartBrushingView: View {
             })
             #if DEBUG
             Button(action: {
-                let result = self.healthStore.logToothbrushEventEndedNow(goingOnFor: try! SmallTime(timeInterval: 120.0))
-                .map { (_) -> Void in
-                    print("Done")
-                }.mapError { (e) -> Error in
-                    print(e)
-                    return e
-                }
-                print(result)
+                let _ = self.healthStore
+                    .logToothbrushEventEndedNow(
+                        goingOnFor: try! SmallTime(timeInterval: 120.0)
+                )
             }, label: { Text("2mins") })
             #endif
         }

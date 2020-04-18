@@ -23,12 +23,12 @@ struct ContentView: View {
         ScrollView {
             StartBrushingView(healthStore: healthStore)
             Spacer(minLength: 20.0)
-            if toothbrushEvents.e.count > 0 {
+            if toothbrushEvents.events.count > 0 {
                 Text("Today")
                     .font(.headline)
                 Divider()
                 Spacer(minLength: 20.0)
-                ForEach(toothbrushEvents.e, id: \.id) { (event) in
+                ForEach(toothbrushEvents.events, id: \.id) { (event) in
                     VStack {
                         ToothbrushEventRow(event: event)
                         Divider()

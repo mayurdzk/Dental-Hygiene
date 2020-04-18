@@ -29,14 +29,16 @@ public class ToothBrushEvents: ObservableObject {
     
     init(hkStore: HKHealthStore) {
         self.hkStore = hkStore
-        e = []
+        events = []
+        startEmittingEvents()
     }
     
     deinit {
         hkStore.stop(query)
     }
     
-    public func foo() {
+
+    private func startEmittingEvents() {
         let quantityType = HKSampleType.categoryType(forIdentifier: HKCategoryTypeIdentifier.toothbrushingEvent)!
         let now = Date()
         let startOfDay = Calendar.current.startOfDay(for: now)
