@@ -15,7 +15,7 @@ import DHTTimer
 struct StartBrushingView: View {
     @State private var brushingTime = SmallTime()
     @State private var isUserBrushing: Bool = false
-    private let healthStore = DHTAccess(hkStore: HKHealthStore())
+    let healthStore: DHTAccess
     private let timer: DHTTimer = DHTTimer()
 
     var body: some View {
@@ -49,6 +49,7 @@ struct StartBrushingView: View {
     }
     
     private func startBrushingTeeth() {
+        _ = requestToothbrushReadAccess()
         timer.start {(t) in
             self.brushingTime = t
         }
@@ -67,6 +68,6 @@ struct StartBrushingView: View {
 
 struct StartBrushingView_Previews: PreviewProvider {
     static var previews: some View {
-        StartBrushingView()
+        StartBrushingView(healthStore: DHTAccess(hkStore: HKHealthStore()))
     }
 }
