@@ -34,6 +34,7 @@
 		BAAA5CF6242F1FD600333253 /* DHTTimer in Frameworks */ = {isa = PBXBuildFile; productRef = BAAA5CF5242F1FD600333253 /* DHTTimer */; };
 		BAAA5CF8242F1FE000333253 /* DHTAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BAAA5CF7242F1FE000333253 /* DHTAccess */; };
 		BAAA5CFA242F1FE000333253 /* DHTTimer in Frameworks */ = {isa = PBXBuildFile; productRef = BAAA5CF9242F1FE000333253 /* DHTTimer */; };
+		BAAC5F74244AB47000A77E7B /* TodaysToothbrushEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC5F73244AB47000A77E7B /* TodaysToothbrushEvents.swift */; };
 		BAE472342376F815003C1E0C /* libDHTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC53C632376E7EF006EAB61 /* libDHTimer.a */; };
 /* End PBXBuildFile section */
 
@@ -173,6 +174,7 @@
 		BA8835002438391A0047943C /* ToothbrushEventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToothbrushEventRow.swift; sourceTree = "<group>"; };
 		BA9DDBE62364537600CD268E /* libDHTAccess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHTAccess.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAA5CF1242F1E2A00333253 /* DHTLibraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DHTLibraries; sourceTree = "<group>"; };
+		BAAC5F73244AB47000A77E7B /* TodaysToothbrushEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysToothbrushEvents.swift; sourceTree = "<group>"; };
 		BAC53C3E2376E4EF006EAB61 /* DHTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DHTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC53C632376E7EF006EAB61 /* libDHTimer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHTimer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -355,6 +357,7 @@
 			children = (
 				BA8834FE2438383D0047943C /* StartBrushingView.swift */,
 				BA8835002438391A0047943C /* ToothbrushEventRow.swift */,
+				BAAC5F73244AB47000A77E7B /* TodaysToothbrushEvents.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -663,6 +666,7 @@
 			files = (
 				BA19818F236429EA00777F8F /* HostingController.swift in Sources */,
 				BA198193236429EA00777F8F /* ComplicationController.swift in Sources */,
+				BAAC5F74244AB47000A77E7B /* TodaysToothbrushEvents.swift in Sources */,
 				BA19818D236429EA00777F8F /* ContentView.swift in Sources */,
 				BA8835012438391A0047943C /* ToothbrushEventRow.swift in Sources */,
 				BA198191236429EA00777F8F /* ExtensionDelegate.swift in Sources */,
