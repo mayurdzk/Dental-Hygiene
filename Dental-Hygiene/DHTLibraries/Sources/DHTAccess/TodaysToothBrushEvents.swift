@@ -18,6 +18,8 @@ import os
 // But that can't happen.
 // See reference: https://developer.apple.com/videos/play/wwdc2019/721/?time=1189
 // Time: 22:06
+
+/// A class that publishes toothbrush events that ocurred today--in reverse chronological order.
 public class ToothBrushEvents: ObservableObject {
     @Published public var e: [ToothbrushEventVD]
     private let hkStore: HKHealthStore
@@ -74,7 +76,9 @@ public class ToothBrushEvents: ObservableObject {
             sampleType: quantityType,
             predicate: predicate,
             limit: HKObjectQueryNoLimit,
-            sortDescriptors: nil) { (query, samples, error) in
+            // Thanks:
+            // https://www.devfright.com/hksamplequery-tutorial-and-examples/
+            sortDescriptors: [NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)]) { (query, samples, error) in
                 guard error == nil else {
                     completion(.failure(DHTAccessError.hkReadFromStoreError(error!)))
                     return
