@@ -9,6 +9,7 @@ import Foundation
 import Combine
 import HealthKit
 import os
+import Dispatch
 
 // The problem this class has set out to solve is publishing
 // toothbrush events to a caller.
@@ -21,7 +22,8 @@ import os
 
 /// A class that publishes toothbrush events that ocurred today--in reverse chronological order.
 public class ToothBrushEvents: ObservableObject {
-    @Published public var e: [ToothbrushEventVD]
+    /// Changes are published on the main queue.
+    @Published public var events: [ToothbrushEventVD]
     private let hkStore: HKHealthStore
     private var query: HKQuery!
     
@@ -45,7 +47,11 @@ public class ToothBrushEvents: ObservableObject {
                 self?.readToothbrushSamples(signaling: { (result) in
                     switch result {
                     case .success(let events):
-                        self?.e = events
+                        // Needed since subscribers are most-likely going to be
+                        // in the UI layer.
+                        DispatchQueue.main.async {
+                            self?.events = events
+                        }
                     case .failure(let e):
                         // TODO: Handle
                         print("Handle: \(e)")
