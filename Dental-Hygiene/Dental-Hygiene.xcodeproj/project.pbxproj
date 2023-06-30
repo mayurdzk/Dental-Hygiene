@@ -35,6 +35,8 @@
 		BAAA5CF8242F1FE000333253 /* DHTAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BAAA5CF7242F1FE000333253 /* DHTAccess */; };
 		BAAA5CFA242F1FE000333253 /* DHTTimer in Frameworks */ = {isa = PBXBuildFile; productRef = BAAA5CF9242F1FE000333253 /* DHTTimer */; };
 		BAAC5F74244AB47000A77E7B /* TodaysToothbrushEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC5F73244AB47000A77E7B /* TodaysToothbrushEvents.swift */; };
+		BACB35BE2A4EE5F900559E7D /* FakeHKStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACB35BD2A4EE5F900559E7D /* FakeHKStore.swift */; };
+		BAD545FE2A4EF20800C6FC27 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD545FD2A4EF20800C6FC27 /* CountdownView.swift */; };
 		BAE472342376F815003C1E0C /* libDHTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC53C632376E7EF006EAB61 /* libDHTimer.a */; };
 /* End PBXBuildFile section */
 
@@ -177,6 +179,8 @@
 		BAAC5F73244AB47000A77E7B /* TodaysToothbrushEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysToothbrushEvents.swift; sourceTree = "<group>"; };
 		BAC53C3E2376E4EF006EAB61 /* DHTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DHTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC53C632376E7EF006EAB61 /* libDHTimer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHTimer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACB35BD2A4EE5F900559E7D /* FakeHKStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeHKStore.swift; sourceTree = "<group>"; };
+		BAD545FD2A4EF20800C6FC27 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +335,7 @@
 				BA198194236429EB00777F8F /* Assets.xcassets */,
 				BA198199236429EB00777F8F /* Info.plist */,
 				BA198196236429EB00777F8F /* Preview Content */,
+				BACB35BD2A4EE5F900559E7D /* FakeHKStore.swift */,
 			);
 			path = "Dental Hygiene Extension";
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				BA8834FE2438383D0047943C /* StartBrushingView.swift */,
 				BA8835002438391A0047943C /* ToothbrushEventRow.swift */,
 				BAAC5F73244AB47000A77E7B /* TodaysToothbrushEvents.swift */,
+				BAD545FD2A4EF20800C6FC27 /* CountdownView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -664,9 +670,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD545FE2A4EF20800C6FC27 /* CountdownView.swift in Sources */,
 				BA19818F236429EA00777F8F /* HostingController.swift in Sources */,
 				BA198193236429EA00777F8F /* ComplicationController.swift in Sources */,
 				BAAC5F74244AB47000A77E7B /* TodaysToothbrushEvents.swift in Sources */,
+				BACB35BE2A4EE5F900559E7D /* FakeHKStore.swift in Sources */,
 				BA19818D236429EA00777F8F /* ContentView.swift in Sources */,
 				BA8835012438391A0047943C /* ToothbrushEventRow.swift in Sources */,
 				BA198191236429EA00777F8F /* ExtensionDelegate.swift in Sources */,

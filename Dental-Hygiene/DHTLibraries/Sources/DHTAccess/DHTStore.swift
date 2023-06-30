@@ -6,15 +6,19 @@
 //  Copyright © 2019 Mayur Dhaka. All rights reserved.
 //
 
-#if canImport(HealthKit)
 import Combine
 import HealthKit
+
+public protocol DHTStore {
+    func logToothbrushEvent(startingAt startTime: Date, duration: TimeInterval) -> Future<Void, DHTAccessError>
+    func todaysToothbrushEvents() -> ToothBrushEvents
+}
 
 /// Dental Health ToothbrushAccess provides a convenient way for you to
 /// log toothbrush events in a HealthKit store.
 ///
 /// All errors thrown from methods of this class are guaranteed to be wrapped in `DHTAccessError`.
-public class DHTAccess {
+public class HKDHTStore: DHTStore {
     private let hkStore: HKHealthStore
     
     
@@ -73,18 +77,12 @@ private func hkSampleToToothbrushEvent(_ sample: HKSample) throws -> ToothbrushE
     )
 }
 
-#if canImport(DHTTimer)
-
 import DHTTimer
 
-extension DHTAccess {
+extension DHTStore {
     public func logToothbrushEventEndedNow(goingOnFor duration: SmallTime) -> Future<Void, DHTAccessError> {
         let toothbrushDuration = duration.timeDuration()
         let startDate = Date().addingTimeInterval(-toothbrushDuration)
         return logToothbrushEvent(startingAt: startDate, duration: toothbrushDuration)
     }
 }
-
-#endif
-
-#endif

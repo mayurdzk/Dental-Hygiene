@@ -12,7 +12,7 @@ import HealthKit
 import Combine
 
 struct ContentView: View {
-    private let healthStore = DHTAccess(hkStore: HKHealthStore())
+    private let healthStore = HKDHTStore(hkStore: HKHealthStore())
 
     var body: some View {
         ScrollView {
