@@ -24,7 +24,7 @@ public func requestToothbrushReadAccess() -> Future<Void, DHTAccessError> {
                 // I have no clue when the app would not have an error but the success
                 // value is still false.
                 // Crashing so we're alerted to this fact.
-                fatalError("No knowable case where this would arise")
+                fatalError("Not knowable case where this would arise")
             }
             
             signal(.success(()))

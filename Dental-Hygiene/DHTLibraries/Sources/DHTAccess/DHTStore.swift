@@ -6,15 +6,19 @@
 //  Copyright © 2019 Mayur Dhaka. All rights reserved.
 //
 
-#if canImport(HealthKit)
 import Combine
 import HealthKit
+
+public protocol DHTStore {
+    func logToothbrushEvent(startingAt startTime: Date, duration: TimeInterval) -> Future<Void, DHTAccessError>
+    func todaysToothbrushEvents() -> ToothBrushEvents
+}
 
 /// Dental Health ToothbrushAccess provides a convenient way for you to
 /// log toothbrush events in a HealthKit store.
 ///
 /// All errors thrown from methods of this class are guaranteed to be wrapped in `DHTAccessError`.
-public class DHTAccess {
+public class HKDHTStore: DHTStore {
     private let hkStore: HKHealthStore
     
     
@@ -59,42 +63,26 @@ public class DHTAccess {
         }
     }
     
-    /// Delivers to you healthkit samples from the user's healthkit data store for tooth brushing events.
-    /// Samples delivered lie between the `start` and `end` dates.
-    /// This method assumes `start` < `end`.
-    public func readToothBrushEvents(from start: Date, to end: Date) -> Future<[HKSample], DHTAccessError> {
-        let quantityType = HKSampleType.categoryType(forIdentifier: HKCategoryTypeIdentifier.toothbrushingEvent)!
-        let predicate = HKQuery.predicateForSamples(withStart: start, end: end, options: [])
-        
-        return Future { [weak self] signal in
-            let query = HKSampleQuery(
-                sampleType: quantityType,
-                predicate: predicate,
-                limit: HKObjectQueryNoLimit,
-                sortDescriptors: nil) { (query, samples, error) in
-                    guard error == nil else {
-                        signal(.failure(.hkReadFromStoreError(error!)))
-                        return
-                    }
-                    signal(.success(samples!))
-            }
-            self?.hkStore.execute(query)
-        }
+    public func todaysToothbrushEvents() -> ToothBrushEvents {
+        let events = ToothBrushEvents(hkStore: hkStore)
+        return events
     }
 }
 
-#if canImport(DHTTimer)
+private func hkSampleToToothbrushEvent(_ sample: HKSample) throws -> ToothbrushEventVD {
+    try ToothbrushEventVD (
+        id: sample.uuid,
+        startDate: sample.startDate,
+        endDate: sample.endDate
+    )
+}
 
 import DHTTimer
 
-extension DHTAccess {
+extension DHTStore {
     public func logToothbrushEventEndedNow(goingOnFor duration: SmallTime) -> Future<Void, DHTAccessError> {
         let toothbrushDuration = duration.timeDuration()
         let startDate = Date().addingTimeInterval(-toothbrushDuration)
         return logToothbrushEvent(startingAt: startDate, duration: toothbrushDuration)
     }
 }
-
-#endif
-
-#endif

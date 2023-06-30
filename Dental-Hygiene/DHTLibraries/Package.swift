@@ -20,11 +20,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "DHTAccess",
-            dependencies: []),
-        .target(
             name: "DHTTimer",
             dependencies: []),
+        .target(
+            name: "DHTAccess",
+            dependencies: ["DHTTimer"]),
         .testTarget(
             name: "DHTAccessTests",
             dependencies: ["DHTAccess"]),
